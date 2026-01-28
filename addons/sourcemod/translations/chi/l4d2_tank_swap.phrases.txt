@@ -1,0 +1,37 @@
+"Phrases"
+{
+	"Menu_Notice"
+	{
+		"chi"	" {olive}<TankSwap>{default} 你可以在 {olive}%i {default}秒内输入 {orange}!tankpass 来将Tank的控制权转让给你的队友！"
+	}
+
+	"Time_Over"
+	{
+		"chi"	"{olive}<TankSwap>{default} 你已错过转让时间，无法转让！"
+	}
+
+	"Menu_Title"
+	{
+		"chi"	"- 谁来玩Tank？-"
+	}
+
+	"Stay_Me"
+	{
+		"chi"	"我自己玩！"
+	}
+
+	"Anyone_But_Me"
+	{
+		"chi"	"除了我，谁都行！"
+	}
+
+	"Random_Surrend"
+	{
+		"chi"	"{olive}<TankSwap>{default} Tank控制权被随机转让给：{orange}%N"
+	}
+
+	"Surrend"
+	{
+		"chi"	"{olive}<TankSwap>{default} Tank控制权被转让给：{orange}%N"
+	}
+}

@@ -1,0 +1,447 @@
+"Phrases"
+{
+	"All4Dead Commands"
+	{
+		"chi"			"All4DeadD指令"
+	}
+	"Director Commands"
+	{
+		"chi"			"导演系统指令"
+	}
+	"Spawn Special Infected"
+	{
+		"chi"			"生成特殊感染者"
+	}
+	"Spawn Uncommon Infected"
+	{
+		"chi"			"生成特殊丧尸"
+	}
+	"Spawn Melee Weapons"
+	{
+		"chi"			"生成近战武器"
+	}
+	"Spawn Weapons"
+	{
+		"chi"			"生成武器"
+	}
+	"Spawn Items"
+	{
+		"chi"			"生成物品"
+	}
+	"Configuration Options"
+	{
+		"chi"			"配置选项"
+	}
+	"Configuration Commands"
+	{
+		"chi"			"配置指令"
+	}
+	"Disable automatic placement"
+	{
+		"chi"			"关闭自动放置"
+	}
+	"Enable automatic placement"
+	{
+		"chi"			"开启自动放置"
+	}
+	"Spawn a tank"
+	{
+		"chi"			"Tank"
+	}
+	"Spawn a witch"
+	{
+		"chi"			"Witch"
+	}
+	"Spawn a boomer"
+	{
+		"chi"			"Boomer"
+	}
+	"Spawn a hunter"
+	{
+		"chi"			"Hunter"
+	}
+	"Spawn a smoker"
+	{
+		"chi"			"Smoker"
+	}
+	"Spawn a spitter"
+	{
+		"chi"			"Spitter"
+	}
+	"Spawn a jockey"
+	{
+		"chi"			"Jockey"
+	}
+	"Spawn a charger"
+	{
+		"chi"			"Charger"
+	}
+	"Spawn a mob"
+	{
+		"chi"			"尸潮"
+	}
+	"Spawn a riot zombie"
+	{
+		"chi"			"防暴警察"
+	}
+	"Spawn a ceda zombie"
+	{
+		"chi"			"防疫人员"
+	}
+	"Spawn a clown zombie"
+	{
+		"chi"			"小丑"
+	}
+	"Spawn a mudmen zombie"
+	{
+		"chi"			"泥人"
+	}
+	"Spawn a roadworker zombie"
+	{
+		"chi"			"道路工人"
+	}
+	"Spawn a jimmie gibbs zombie"
+	{
+		"chi"			"吉米吉布斯(很强)"
+	}
+	"Spawn a fallen survivor zombie"
+	{
+		"chi"			"堕落幸存者(掉落物资)"
+	}
+	"Spawn a defibrillator"
+	{
+		"chi"			"电击器"
+	}
+	"Spawn a medkit"
+	{
+		"chi"			"急救包"
+	}
+	"Spawn some pills"
+	{
+		"chi"			"药丸"
+	}
+	"Spawn some adrenaline"
+	{
+		"chi"			"肾上腺素"
+	}
+	"Spawn a molotov"
+	{
+		"chi"			"燃烧瓶"
+	}
+	"Spawn a pipe bomb"
+	{
+		"chi"			"土制炸弹"
+	}
+	"Spawn a bile jar"
+	{
+		"chi"			"胆汁瓶"
+	}
+	"Spawn a gas tank"
+	{
+		"chi"			"油桶"
+	}
+	"Spawn a firework"
+	{
+		"chi"			"烟花"
+	}
+	"Spawn a propane tank"
+	{
+		"chi"			"煤气罐"
+	}
+	"Spawn an oxygen tank"
+	{
+		"chi"			"氧气瓶"
+	}
+	"Spawn an ammo pile"
+	{
+		"chi"			"子弹堆"
+	}
+	"Spawn laser sight pack"
+	{
+		"chi"			"激光瞄准器"
+	}
+	"Spawn incendiary ammo"
+	{
+		"chi"			"燃烧子弹"
+	}
+	"Spawn explosive ammo"
+	{
+		"chi"			"高爆子弹"
+	}
+	"Spawn a gnome"
+	{
+		"chi"			"矮人玩具"
+	}
+	"Spawn cola bottles"
+	{
+		"chi"			"可乐瓶"
+	}
+	"Spawn a pistol"
+	{
+		"chi"			"手枪"
+	}
+	"Spawn a magnum"
+	{
+		"chi"			"马格南手枪"
+	}
+	"Spawn a pumpshotgun"
+	{
+		"chi"			"木喷"
+	}
+	"Spawn a shotgun chrome"
+	{
+		"chi"			"铁喷"
+	}
+	"Spawn a sub machine gun"
+	{
+		"chi"			"UZI"
+	}
+	"Spawn a silenced smg"
+	{
+		"chi"			"SMG"
+	}
+	"Spawn a mp5"
+	{
+		"chi"			"MP5冲锋枪"
+	}
+	"Spawn an assault rifle"
+	{
+		"chi"			"M16步枪"
+	}
+	"Spawn a sg552 rifle"
+	{
+		"chi"			"SG552步枪"
+	}
+	"Spawn an AK74"
+	{
+		"chi"			"AK74步枪"
+	}
+	"Spawn a desert rifle"
+	{
+		"chi"			"三连发沙漠步枪"
+	}
+	"Spawn a shotgun spas"
+	{
+		"chi"			"SPAS连发霰弹枪"
+	}
+	"Spawn an auto shotgun"
+	{
+		"chi"			"战术连发霰弹枪"
+	}
+	"Spawn a hunting rifle"
+	{
+		"chi"			"狩猎狙击枪"
+	}
+	"Spawn a military sniper"
+	{
+		"chi"			"军用狙击枪"
+	}
+	"Spawn a scout"
+	{
+		"chi"			"Scout狙击枪"
+	}
+	"Spawn an awp"
+	{
+		"chi"			"AWP狙击枪"
+	}
+	"Spawn a grenade launcher"
+	{
+		"chi"			"榴弹发射器"
+	}
+	"Spawn a m60"
+	{
+		"chi"			"M60机关枪"
+	}
+	"Spawn a baseball bat"
+	{
+		"chi"			"棒球棍"
+	}
+	"Spawn a chainsaw"
+	{
+		"chi"			"燃油链锯"
+	}
+	"Spawn a cricket bat"
+	{
+		"chi"			"板球球棍"
+	}
+	"Spawn a crowbar"
+	{
+		"chi"			"撬棍"
+	}
+	"Spawn an electric guitar"
+	{
+		"chi"			"电吉他"
+	}
+	"Spawn a fire axe"
+	{
+		"chi"			"消防斧头"
+	}
+	"Spawn a frying pan"
+	{
+		"chi"			"平底锅"
+	}
+	"Spawn a katana"
+	{
+		"chi"			"武士刀"
+	}
+	"Spawn a machete"
+	{
+		"chi"			"砍刀"
+	}
+	"Spawn a police baton"
+	{
+		"chi"			"警棍"
+	}
+	"Spawn a knife"
+	{
+		"chi"			"CS小刀"
+	}
+	"Spawn a golf club"
+	{
+		"chi"			"高尔夫球棍"
+	}
+	"Spawn a pitchfork"
+	{
+		"chi"			"草叉"
+	}
+	"Spawn a shovel"
+	{
+		"chi"			"铲子"
+	}
+	"End non-stop panic events"
+	{
+		"chi"			"停止无尽尸潮"
+	}
+	"Force non-stop panic events"
+	{
+		"chi"			"开始无尽尸潮"
+	}
+	"Director controls if a tank spawns this round"
+	{
+		"chi"			"导演系统控制生成Tank"
+	}
+	"Force a tank to spawn this round"
+	{
+		"chi"			"当前回合强制生成Tank"
+	}
+	"Director controls if a witch spawns this round"
+	{
+		"chi"			"导演系统控制生成Tank"
+	}
+	"Force a witch to spawn this round"
+	{
+		"chi"			"当前回合强制生成Witch"
+	}
+	"Stop bosses spawning continuously"
+	{
+		"chi"			"停止持续生成Tank和Witch"
+	}
+	"Force bosses to spawn continuously"
+	{
+		"chi"			"开始持续生成Tank和Witch"
+	}
+	"Add more zombies to the horde"
+	{
+		"chi"			"增加尸潮数量"
+	}
+	"Disable player notifications"
+	{
+		"chi"			"停止通知玩家"
+	}
+	"Enable player notifications"
+	{
+		"chi"			"开启通知玩家"
+	}
+	"Restore all settings to game defaults now"
+	{
+		"chi"			"恢复默认设置"
+	}
+	"Force a panic event to start"
+	{
+		"chi"			"强制生成一波尸潮"
+	}
+	"has been spawned"
+	{
+		"chi"			"{green}%s{lightgreen} 已经生成"
+	}
+	"auto"
+	{
+		"chi"			"自动"
+	}
+	"Automatic placement of spawned infected has been enabled"
+	{
+		"chi"			"{lightgreen} 开启自动放置生成感染者功能"
+	}
+	"Automatic placement of spawned infected has been disabled"
+	{
+		"chi"			"{lightgreen} 关闭自动放置生成感染者功能"
+	}
+	"Bosses will now spawn continuously"
+	{
+		"chi"			"{lightgreen} 开始持续生成Tank和Witch"
+	}
+	"Bosses will no longer spawn continuously"
+	{
+		"chi"			"{lightgreen} 停止持续生成Tank和Witch"
+	}
+	"Endless panic events have started"
+	{
+		"chi"			"{lightgreen} 开始无尽尸潮"
+	}
+	"Endless panic events have ended"
+	{
+		"chi"			"{lightgreen} 停止无尽尸潮"
+	}
+	"A tank is guaranteed to spawn this round"
+	{
+		"chi"			"{lightgreen} 当前回合Tank固定生成"
+	}
+	"A tank is no longer guaranteed to spawn this round"
+	{
+		"chi"			"{lightgreen} 当前回合Tank生成恢复原样"
+	}
+	"A witch is guaranteed to spawn this round"
+	{
+		"chi"			"{lightgreen} 当前回合witch固定生成"
+	}
+	"A witch is no longer guaranteed to spawn this round"
+	{
+		"chi"			"{lightgreen} 当前回合witch生成恢复原样"
+	}
+	"The horde grows larger"
+	{
+		"chi"			"{lightgreen} 尸潮数量已增加"
+	}
+	"Player notifications have now been enabled"
+	{
+		"chi"			"{lightgreen} 玩家提醒功能已开启"
+	}
+	"Restored the default settings"
+	{
+		"chi"			"{lightgreen} 恢复默认设置"
+	}
+	"Allowing an all bot survivor team"
+	{
+		"chi"			"允许全BOT幸存者队伍"
+	}
+	"We now require at least one human survivor before the game can start"
+	{
+		"chi"			"禁止全BOT幸存者队伍(至少需要一个玩家开始游戏)"
+	}
+	"The zombies are coming!"
+	{
+		"chi"			"{lightgreen} 尸潮来了!"
+	}
+    "Could not find a valid spawn position for S.I. in 5 tries"
+	{
+		"chi"			"尝试5次后无法为此特殊感染者找到有效的生成位置"
+	}
+	"Can not spawn, please try again"
+	{
+		"chi"			"无法生成, 请再次尝试"
+	}
+	"Can not spawn witch in tries at this moment"
+	{
+		"chi"			"尝试%d次后无法为此witch找到有效的生成位置"
+	}
+}

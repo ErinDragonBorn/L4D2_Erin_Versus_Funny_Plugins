@@ -13,61 +13,6 @@
 	"3"
 	{
 		"type"		"S"
-		"text"		"{GREEN}!vote{DEFAULT}可以{GREEN}投票回血，换三方图{DEFAULT}等"
+		"text"		"剩下内容自己加吧"
 	}
-	"4"
-	{
-		"type"		"S"
-		"text"		"{GREEN}!myfl <数字> {DEFAULT}可为自己增加{GREEN}指定延迟{DEFAULT}\n{GREEN}!ping{DEFAULT} 查看当前{GREEN}ping值"
-	}
-    "5"
-    {
-        "type"		"S"
-        "TEXT"		"输入{GREEN}!h{DEFAULT}可以变成牢大（仅限准备阶段）"
-    }
-    "6"
-    {
-        "type"		"S"
-        "TEXT"		"本服支持{GREEN}!mix{DEFAULT}分队，{GREEN}!mixmap{DEFAULT}随机地图"
-    }
-    "7"
-    {
-        "type"		"S"
-        "TEXT"		"准备阶段对着墙同时按下{GREEN}空格+E{DEFAULT}会变成{LIGHTGREEN}蜘蛛侠"
-    }
-    "8"
-    {
-        "type"		"S"
-        "TEXT"		"旁观者可以输入{GREEN}!spechud{DEFAULT}打开旁观者面板"
-    }
-    "9"
-    {
-        "type"		"S"
-        "TEXT"		"{GREEN}!mixmap{DEFAULT} 随机所有官方图（不包括c9/c14/c13）\n{GREEN}!mixmap so{DEFAULT} 随机二代官方图"
-    }
-    "10"
-    {
-        "type"		"S"
-        "TEXT"		"聊天框输入{GREEN}!chmatch{DEFAULT}可以更换插件"
-    }
-    "11"
-    {
-        "type"		"S"
-        "TEXT"		"旁观占位不上怎么办？{GREEN}!kickspecs{DEFAULT}踢掉就行了"
-    }
-    "12"
-    {
-        "type"		"S"
-        "TEXT"		"突然看不见特感了？打开控制台分别输入{GREEN}record 1→stop{DEFAULT}即可"
-    }
-    "13"
-    {
-        "type"		"S"
-        "TEXT"		"有人挂机了怎么办，{GREEN}!vote{DEFAULT}移到旁观或者直接{GREEN}√√√X"
-    }
-    "14"
-    {
-        "type"		"S"
-        "TEXT"		"小知识:拿着药对着队友按{GREEN}R键{DEFAULT}即可递药"
-    }
 }

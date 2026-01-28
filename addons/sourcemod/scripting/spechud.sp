@@ -19,7 +19,7 @@
 #include <lerpmonitor>
 #include <witch_and_tankifier>
 
-#define PLUGIN_VERSION	"3.8.4"
+#define PLUGIN_VERSION	"3.8.5"
 
 public Plugin myinfo = 
 {
@@ -217,12 +217,12 @@ void LoadPluginTranslations()
 // ======================================================================
 //  Dependency Monitor
 // ======================================================================
-public void GameConVarChanged(ConVar convar, const char[] oldValue, const char[] newValue)
+void GameConVarChanged(ConVar convar, const char[] oldValue, const char[] newValue)
 {
 	GetGameCvars();
 }
 
-public void ServerCvarChanged(ConVar convar, const char[] oldValue, const char[] newValue)
+void ServerCvarChanged(ConVar convar, const char[] oldValue, const char[] newValue)
 {
 	FillServerNamer();
 }
@@ -281,7 +281,7 @@ void InitTankSpawnSchemeTrie()
 	BuildCustomTrieEntries();
 }
 
-public Action SetMapFirstTankSpawningScheme(int args)
+Action SetMapFirstTankSpawningScheme(int args)
 {
 	char mapname[64];
 	GetCmdArg(1, mapname, sizeof(mapname));
@@ -290,7 +290,7 @@ public Action SetMapFirstTankSpawningScheme(int args)
 	return Plugin_Handled;
 }
 
-public Action SetMapSecondTankSpawningScheme(int args)
+Action SetMapSecondTankSpawningScheme(int args)
 {
 	char mapname[64];
 	GetCmdArg(1, mapname, sizeof(mapname));
@@ -298,7 +298,7 @@ public Action SetMapSecondTankSpawningScheme(int args)
 	return Plugin_Handled;
 }
 
-public Action SetFinaleExceptionMap(int args)
+Action SetFinaleExceptionMap(int args)
 {
 	char mapname[64];
 	GetCmdArg(1, mapname, sizeof(mapname));
@@ -318,7 +318,6 @@ public void OnClientDisconnect(int client)
 }
 
 public void OnMapStart() { bRoundLive = false; }
-public void OnMapEnd() {}
 public void OnRoundIsLive()
 {
 	FillReadyConfig();
@@ -327,7 +326,11 @@ public void OnRoundIsLive()
 	
 	GetCurrentGameMode();
 	
-	//for (int i = 1; i <= MaxClients; ++i) storedClass[i] = ZC_None;
+	for (int i = 1; i <= MaxClients; i++)
+	{
+		if (IsClientInGame(i) && GetClientTeam(i) == TEAM_SPECTATOR && !IsClientSourceTV(i))
+			FakeClientCommand(i, "sm_spectate");
+	}
 	
 	if (g_Gamemode == GAMEMODE_VERSUS)
 	{
@@ -388,17 +391,17 @@ public void OnRoundIsLive()
 // ======================================================================
 //  Events
 // ======================================================================
-public void Event_RoundStart(Event event, const char[] name, bool dontBroadcast)
+void Event_RoundStart(Event event, const char[] name, bool dontBroadcast)
 {
 	bRoundLive = false;
 }
 
-public void Event_RoundEnd(Event event, const char[] name, bool dontBroadcast)
+void Event_RoundEnd(Event event, const char[] name, bool dontBroadcast)
 {
 	bRoundLive = false;
 }
 
-public void Event_PlayerDeath(Event event, const char[] name, bool dontBroadcast)
+void Event_PlayerDeath(Event event, const char[] name, bool dontBroadcast)
 {
 	int client = GetClientOfUserId(event.GetInt("userid"));
 	if (!client || !IsInfected(client)) return;
@@ -410,12 +413,12 @@ public void Event_PlayerDeath(Event event, const char[] name, bool dontBroadcast
 	}
 }
 
-public void Event_WitchDeath(Event event, const char[] name, bool dontBroadcast)
+void Event_WitchDeath(Event event, const char[] name, bool dontBroadcast)
 {
 	if (iWitchCount > 0) iWitchCount--;
 }
 
-public void Event_PlayerTeam(Event event, const char[] name, bool dontBroadcast)
+void Event_PlayerTeam(Event event, const char[] name, bool dontBroadcast)
 {
 	int client = GetClientOfUserId(event.GetInt("userid"));
 	if (!client) return;
@@ -436,7 +439,7 @@ public void Event_PlayerTeam(Event event, const char[] name, bool dontBroadcast)
 // ======================================================================
 //  HUD Command Callbacks
 // ======================================================================
-public Action ToggleSpecHudCmd(int client, int args) 
+Action ToggleSpecHudCmd(int client, int args) 
 {
 	if (GetClientTeam(client) != L4D2Team_Spectator)
 		return Plugin_Handled;
@@ -447,7 +450,7 @@ public Action ToggleSpecHudCmd(int client, int args)
 	return Plugin_Handled;
 }
 
-public Action ToggleTankHudCmd(int client, int args) 
+Action ToggleTankHudCmd(int client, int args) 
 {
 	int team = GetClientTeam(client);
 	if (team == L4D2Team_Survivor)
@@ -464,7 +467,7 @@ public Action ToggleTankHudCmd(int client, int args)
 // ======================================================================
 //  HUD Handle
 // ======================================================================
-public Action HudDrawTimer(Handle hTimer)
+Action HudDrawTimer(Handle hTimer)
 {
 	if (IsInReady() || IsInPause())
 		return Plugin_Continue;
@@ -560,8 +563,8 @@ public Action HudDrawTimer(Handle hTimer)
 	return Plugin_Continue;
 }
 
-public int DummySpecHudHandler(Menu hMenu, MenuAction action, int param1, int param2) { return 1; }
-public int DummyTankHudHandler(Menu hMenu, MenuAction action, int param1, int param2) { return 1; }
+int DummySpecHudHandler(Menu hMenu, MenuAction action, int param1, int param2) { return 1; }
+int DummyTankHudHandler(Menu hMenu, MenuAction action, int param1, int param2) { return 1; }
 
 /**********************************************************************************************/
 
@@ -575,7 +578,7 @@ void FillHeaderInfo(Panel hSpecHud)
 		iTickrate = RoundToNearest(1.0 / GetTickInterval());
 	
 	static char buf[64];
-	Format(buf, sizeof(buf), "服务器: %s [人数 %i/%i | %iT]", sHostname, GetRealClientCount(), iMaxPlayers, iTickrate);
+	Format(buf, sizeof(buf), "Server: %s [Slots %i/%i | %iT]", sHostname, GetRealClientCount(), iMaxPlayers, iTickrate);
 	DrawPanelText(hSpecHud, buf);
 }
 
@@ -684,18 +687,18 @@ void FillSurvivorInfo(Panel hSpecHud)
 		case GAMEMODE_SCAVENGE:
 		{
 			int score = GetScavengeMatchScore(SurvivorTeamIndex);
-			FormatEx(info, sizeof(info), "->1. 生还 [%d of %d]", score, GetScavengeRoundLimit());
+			FormatEx(info, sizeof(info), "->1. 生还者 [%d of %d]", score, GetScavengeRoundLimit());
 		}
 		case GAMEMODE_VERSUS:
 		{
 			if (bRoundLive)
 			{
-				FormatEx(info, sizeof(info), "->1. 生还 [%d]",
+				FormatEx(info, sizeof(info), "->1. 生还者 [%d]",
 							L4D2Direct_GetVSCampaignScore(SurvivorTeamIndex) + GetVersusProgressDistance(SurvivorTeamIndex));
 			}
 			else
 			{
-				FormatEx(info, sizeof(info), "->1. 生还 [%d]",
+				FormatEx(info, sizeof(info), "->1. 生还者 [%d]",
 							L4D2Direct_GetVSCampaignScore(SurvivorTeamIndex));
 			}
 		}
@@ -730,7 +733,7 @@ void FillSurvivorInfo(Panel hSpecHud)
 			if (IsHangingFromLedge(client))
 			{
 				// Nick: <300HP@Hanging>
-				FormatEx(info, sizeof(info), "%s: <%iHP@倒地>", name, GetClientHealth(client));
+				FormatEx(info, sizeof(info), "%s: <%iHP@挂边>", name, GetClientHealth(client));
 			}
 			else if (IsIncapacitated(client))
 			{
@@ -868,7 +871,7 @@ void FillScoreInfo(Panel hSpecHud)
 				
 				FormatEx(	info,
 							sizeof(info),
-							"> HB分: %i | DB分: %i | 药分: %i",
+							"> 实血分: %i | 虚血分: %i | 药分: %i",
 							permBonus, tempBonus, pillsBonus);
 				DrawPanelText(hSpecHud, info);
 				
@@ -899,11 +902,11 @@ void FillInfectedInfo(Panel hSpecHud)
 		case GAMEMODE_SCAVENGE:
 		{
 			int score = GetScavengeMatchScore(InfectedTeamIndex);
-			FormatEx(info, sizeof(info), "->2. 特感 [%d of %d]", score, GetScavengeRoundLimit());
+			FormatEx(info, sizeof(info), "->2. 感染者 [%d of %d]", score, GetScavengeRoundLimit());
 		}
 		case GAMEMODE_VERSUS:
 		{
-			FormatEx(info, sizeof(info), "->2. 特感 [%d]",
+			FormatEx(info, sizeof(info), "->2. 感染者 [%d]",
 						L4D2Direct_GetVSCampaignScore(InfectedTeamIndex));
 		}
 	}
@@ -958,12 +961,12 @@ void FillInfectedInfo(Panel hSpecHud)
 				if (iHP < iMaxHP)
 				{
 					// verygood: Charger (Ghost@1HP)
-					FormatEx(info, sizeof(info), "%s: %s (灵魂状态@%iHP)", name, zClassName, iHP);
+					FormatEx(info, sizeof(info), "%s: %s (灵魂@%iHP)", name, zClassName, iHP);
 				}
 				else
 				{
 					// verygood: Charger (Ghost)
-					FormatEx(info, sizeof(info), "%s: %s (灵魂状态)", name, zClassName);
+					FormatEx(info, sizeof(info), "%s: %s (灵魂)", name, zClassName);
 				}
 			}
 			else
@@ -1003,7 +1006,7 @@ void FillInfectedInfo(Panel hSpecHud)
 	
 	if (!infectedCount)
 	{
-		DrawPanelText(hSpecHud, "目前没有特感。");
+		DrawPanelText(hSpecHud, "目前没有特殊感染者。");
 	}
 }
 
@@ -1046,12 +1049,12 @@ bool FillTankInfo(Panel hSpecHud, bool bTankHUD = false)
 	if (!IsFakeClient(tank))
 	{
 		GetClientFixedName(tank, name, sizeof(name));
-		Format(info, sizeof(info), "控制者 : %s (%s)", name, info);
+		Format(info, sizeof(info), "控制者: %s (%s)", name, info);
 	}
 	else
 	{
 		GetClientFixedName(tank, name, sizeof(name));
-		Format(info, sizeof(info), "控制者 : %s (AI)", name, info);
+		Format(info, sizeof(info), "控制者: %s(AI) (%s)", name, info);
 	}
 	DrawPanelText(hSpecHud, info);
 
@@ -1062,22 +1065,22 @@ bool FillTankInfo(Panel hSpecHud, bool bTankHUD = false)
 	
 	if (health <= 0 || IsIncapacitated(tank))
 	{
-		info = "血量 : 死亡";
+		info = "血量: 死亡";
 	}
 	else
 	{
-		FormatEx(info, sizeof(info), "血量 : %i / %i%%", health, L4D2Util_GetMax(1, RoundFloat(healthPercent)));
+		FormatEx(info, sizeof(info), "血量: %i / %i%%", health, L4D2Util_GetMax(1, RoundFloat(healthPercent)));
 	}
 	DrawPanelText(hSpecHud, info);
 
 	// Draw frustration
 	if (!IsFakeClient(tank))
 	{
-		FormatEx(info, sizeof(info), "控制权 : %d%%", GetTankFrustration(tank));
+		FormatEx(info, sizeof(info), "控制权: %d%%", GetTankFrustration(tank));
 	}
 	else
 	{
-		info = "控制权 : AI";
+		info = "控制权: AI";
 	}
 	DrawPanelText(hSpecHud, info);
 
@@ -1158,10 +1161,10 @@ void FillGameInfo(Panel hSpecHud)
 					FormatEx(buffer, sizeof(buffer), "%i%%", iWitchFlow);
 					
 					if (bDivide) {
-						Format(info, sizeof(info), "%s | 女巫: %s", info, ((bRoundHasFlowWitch || bCustomBossSys) ? buffer : (bStaticWitch ? "Static" : "Event")));
+						Format(info, sizeof(info), "%s | 妹子: %s", info, ((bRoundHasFlowWitch || bCustomBossSys) ? buffer : (bStaticWitch ? "Static" : "Event")));
 					} else {
 						bDivide = true;
-						FormatEx(info, sizeof(info), "女巫: %s", ((bRoundHasFlowWitch || bCustomBossSys) ? buffer : (bStaticWitch ? "Static" : "Event")));
+						FormatEx(info, sizeof(info), "妹子: %s", ((bRoundHasFlowWitch || bCustomBossSys) ? buffer : (bStaticWitch ? "Static" : "Event")));
 					}
 				}
 				

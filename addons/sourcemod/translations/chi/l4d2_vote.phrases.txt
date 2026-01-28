@@ -1,0 +1,31 @@
+"Phrases"
+{
+	"Vote_HP_Pass"
+	{
+		"chi"		"[SM] {blue}管理员 {default}({olive}%N) {default}已恢复所有玩家血量"
+	}
+
+	"Vote_Spec_Not"
+	{
+		"chi"		"{olive}<Vote>{default}旁观者无法发起投票。"
+	}
+
+	"Vote_Initiate"
+	{
+		"chi"		"{olive}<Vote>{default}玩家 {teamcolor}%N {orange}发起了一个投票。"
+	}
+
+	"Vote_Process"
+	{
+		"chi"		"{olive}<Vote>{default}已经有一个投票正在进行。"
+	}
+
+	"Vote_None_Player"
+	{
+		"chi"		"{olive}<Vote>{default}当前无符合投票条件的玩家。"
+	}
+	"Vote_level_low"
+	{
+		"chi"		"{olive}<Vote>{default}您当前权限不足，无法踢出{teamcolor}%N。"
+	}
+}

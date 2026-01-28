@@ -1,23 +1,26 @@
 "Phrases"
 {
-	"Tag"
-	{
-		"en"		"[{green}!{default}]"
-	}
-	"AI"
-	{
-		"en"		"AI"
-	}
-	"HealthRemaining"
-	{
-		"en"		"{blue}Tank{default} ({olive}%s{default}) had {green}%d{default} health remaining"
-	}
-	"DealtToTank"
-	{
-		"en"		"{blue}Damage{default} dealt to {blue}Tank{default} ({olive}%s{default})"
-	}
-	"PercentDamage"
-	{
-		"en"		"{blue}[{default}%d{blue}] ({default}%i%%{blue}) {olive}%N"
-	}
+    "Tag"
+    {
+        "en"        "[{green}!{default}]"
+        "chi"       "{default}[{green}!{default}]"
+    }
+    
+    "HealthRemaining"
+    {
+        "en"        "{blue}Tank{default} ({olive}%s{default}) had {green}%d{default} health remaining"
+        "chi"       "{blue}坦克{default} ({olive}%s{default}) 还剩下 {green}%d{default} 点血"
+    }
+    
+    "DealtToTank"
+    {
+        "en"        "{blue}Damage{default} dealt to {blue}Tank{default} ({olive}%s{default}):"
+        "chi"       "对 {blue}坦克{default} ({olive}%s{default}) 造成的伤害统计:"
+    }
+    
+    "PercentDamage"
+    {
+        "en"        "{blue}[{default}%d{blue}] ({default}%d%%{blue}) {olive}%N"
+        "chi"       "{blue}[{default}%d{blue}] ({default}%d%%{blue}) {olive}%N"
+    }
 }

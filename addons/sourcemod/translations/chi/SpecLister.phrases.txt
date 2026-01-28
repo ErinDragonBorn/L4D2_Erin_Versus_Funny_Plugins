@@ -1,0 +1,32 @@
+﻿"Phrases"
+{
+	"Mute_Menu_Title"
+	{
+		"chi"		"静音控制菜单:"
+	}
+
+	"Mute_Team_All"
+	{
+		"chi"		"静音所有队友"
+	}
+
+	"UnMute_Team_All"
+	{
+		"chi"		"解除队友静音"
+	}
+
+	"Speclisten"
+	{
+		"chi"		"旁观监听模式"
+	}
+
+	"Speclisten_On"
+	{
+		"chi"		"{olive}[SpecListner] {default}监听 {blue}已启用"
+	}
+
+	"Speclisten_Off"
+	{
+		"chi"		"{olive}[SpecListner] {default}监听 {red}已禁用"
+	}
+}

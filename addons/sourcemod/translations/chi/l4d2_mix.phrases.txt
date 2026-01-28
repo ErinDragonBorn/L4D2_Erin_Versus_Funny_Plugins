@@ -1,0 +1,158 @@
+"Phrases"
+{
+	"cant_join_no_pick"
+	{
+		"chi"		"{orange}<Mix>{default} 你未被选择，无法加入队伍。"
+	}
+
+	"admin_stop"
+	{
+		"chi"		"{orange}<Mix> {default}管理员 {olive}%N 中止了Mix{default}。"
+	}
+
+	"no_start_stop"
+	{
+		"chi"		"{orange}<Mix> {default} 当前未启用。"
+	}
+
+	"Spec_Start"
+	{
+		"chi"		"{orange}<Mix> {default} 旁观者无法启用。"
+	}
+
+	"start_start"
+	{
+		"chi"		"{orange}<Mix> {default} 当前已启用。"
+	}
+
+	"not_allow_round_live"
+	{
+		"chi"		"{orange}<Mix> {default} 回合开始后禁用。"
+	}
+
+	"admin_start"
+	{
+		"chi"		"{orange}<Mix> {default}管理员 {olive}%N 强制启用了Mix{default}。"
+	}
+
+	"pvote_to_start"
+	{
+		"chi"		"{orange}<Mix> {olive}%N{default} 投票启用Mix（管理员输入!stopmix以中止）。"
+	}
+
+	"pvote_to_start_rd"
+	{
+		"chi"		"{orange}<Mix> {olive}%N{default} 投票启用Mix队伍随机分配（管理员输入!stopmix以中止）。"
+	}
+
+	"already_vote"
+	{
+		"chi"		"{orange}<Mix> {default} 有投票正在进行，暂时无法启用Mix"
+	}
+
+	"Vote_Pass_Tittle"
+	{
+		"chi"		"正在启用Mix……"
+	}
+
+	"Time_Mix_Random"
+	{
+		"chi"		"{orange}<Mix> {default} 正在随机分配队伍……"
+	}
+
+	"Down_Mix_Random"
+	{
+		"chi"		"{orange}<Mix> {default} 队伍随机分配完毕。"
+	}
+
+
+	"start_condition_1v1"
+	{
+		"chi"		"{orange}<Mix> {default} 你脑子瓦特了？这特么是1v1！"
+	}
+
+	"start_condition"
+	{
+		"chi"		"{orange}<Mix> {default} 只有%d名玩家加入队伍后才能启用Mix。"
+	}
+
+	"tittle_1st_cap"
+	{
+		"chi"		"Mix - 投票选择第一名队长"
+	}
+
+	"tittle_2nd_cap"
+	{
+		"chi"		"Mix - 投票选择第二名队长"
+	}
+
+	"tittle_pteammate"
+	{
+		"chi"		"Mix - 选择你的队员（A-BB-AA-B）"
+	}
+
+	"wrong_team_stop"
+	{
+		"chi"		"{orange}<Mix> {default}队长 {olive}%N {default}加入了错误的队伍，插件中止..."
+	}
+
+	"teams_picked"
+	{
+		"chi"		"{orange}<Mix> {default} 队伍选择完毕。"
+	}
+
+	"not_found_stop"
+	{
+		"chi"		"{orange}<Mix> {default} 未找到被选择的队员，插件中止……"
+	}
+
+	"1stcap_novote_stop"
+	{
+		"chi"		"{orange}<Mix> {default} 无人投票导致第一名队长投票失败，插件中止……"
+	}
+
+	"2ndcap_novote_stop"
+	{
+		"chi"		"{orange}<Mix> {default} 无人投票导致第二名队长投票失败，插件中止……"
+	}
+
+	"no_pick_stop"
+	{
+		"chi"		"{orange}<Mix> {default} 玩家中途退出导致无人可选择，插件中止……"
+	}
+
+	"no_cap_stop"
+	{
+		"chi"		"{orange}<Mix> {default} 队长中途退出导致失败，插件中止……"
+	}
+
+	"1stcap_confirm"
+	{
+		"chi"		"{orange}<Mix> {default} 第一名队长是 {olive}%N{default}，({orange}%d {default}票)"
+	}
+
+	"2ndcap_confirm"
+	{
+		"chi"		"{orange}<Mix> {default} 第二名队长是 {olive}%N{default}，({orange}%d {default}票)"
+	}
+
+	"1stcap_pteammate"
+	{
+		"chi"		"{orange}<Mix> {olive}%N {default}被选择 (生还方)。"
+	}
+
+	"2ndcap_pteammate"
+	{
+		"chi"		"{orange}<Mix> {olive}%N {default}被选择 (特感方)。"
+	}
+
+	"pleft_stop"
+	{
+		"chi"		"{orange}<Mix> {default}玩家 {olive}%N {default}离开了游戏，插件中止……"
+	}
+
+	"Vote_Tittle"
+	{
+		"chi"		"启用Mix选人？"
+	}
+}

@@ -7,10 +7,10 @@
 public Plugin myinfo =
 {
     name = "玩家连接服务器时的信息提示",
-    author = "早濑优香",
+    author = "Erin",
     description = "从Anne插件包里cv下来的连接提示,去除其他东西",
     version = "1.0",
-    url = "https://github.com/HayaseYuukaSAMA/L4D2-MSF-Server-Plugins"
+    url = "https://github.com/ErinDragonBorn/L4D2_Erin_Versus_Funny_Plugins"
 }
 
 public void OnPluginStart()
@@ -56,7 +56,7 @@ public Action PlayerDisconnect_Event(Handle event, const char[] name, bool dontB
     }
     else if(StrContains(reason, "by user", false) != -1)
     {
-        Format(message,sizeof(message),"自己选择跑路");
+        Format(message,sizeof(message),"自己润了");
     }
     else if(StrContains(reason, "ping is too high", false) != -1)
     {

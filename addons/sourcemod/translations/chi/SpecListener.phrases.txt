@@ -1,0 +1,47 @@
+"Phrases"
+{
+	"Tag"
+	{
+		"chi"		"[{olive}SpecListener{default}]"
+	}
+	"OnlySpec"
+	{
+		"chi"		"只有旁观者可以听."
+	}
+	"PanelTitle"
+	{
+		"chi"		"SpecListener"
+	}
+	"PanelEnable"
+	{
+		"chi"		"开启"
+	}
+	"PanelDisable"
+	{
+		"chi"		"关闭"
+	}
+	"PanelStatus"
+	{
+		"chi"		"状态"
+	}
+	"Enable"
+	{
+		"chi"		"{green}开启{default}"
+	}
+	"Disable"
+	{
+		"chi"		"{green}关闭{default}"
+	}
+	"Usage"
+	{
+		"chi"		"用法: sm_listen <enable/disable/status>"
+	}
+	"ErrorFlags"
+	{
+		"chi"		"错误: section voice flags"
+	}
+	"ErrorCookie"
+	{
+		"chi"		"错误: cookie 还没有缓存 (请过会再进行尝试)."
+	}
+}

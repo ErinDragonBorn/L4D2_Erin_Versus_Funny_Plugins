@@ -1,0 +1,11 @@
+"Phrases"
+{
+	"Tag"
+	{
+		"chi"		"{red}[{default}Tank 控制权保护{red}]{default}"
+	}
+	"SurvivorsRunBack"
+	{
+		"chi"		"生还者每往回跑 {olive}%i{green}%% {default}路程，Tank 的挫败感就会冻结 {olive}%0.1f {green}秒{default}。"
+	}
+}

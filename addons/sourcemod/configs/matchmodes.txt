@@ -4,27 +4,27 @@
 	{
 		"zonemod"
 		{
-			"name" "ZoneMod 2.8.9"
+			"name" "ZoneMod 2.9"
 		}
 		"zoneretro"
 		{
-			"name" "ZoneMod(仿1代)"
+			"name" "ZoneMod 仿1代"
 		}
 		"zonemod4K"
 		{
-			"name" "ZoneMod(四控狂欢)"
+			"name" "ZoneMod 四控狂欢"
 		}
 		"advanced"
 		{
-			"name" "ZoneMod(进阶包抗)"
+			"name" "ZoneMod 进阶包抗 "
 		}
 		"witchparty"
 		{
-			"name" "Zone-WitchParty"
+			"name" "ZoneMod 女巫派对"
 		}
 		"zm1v4"
 		{
-			"name" "1v4 Zonemod(练习模式)"
+			"name" "1v4 ZoneMod 仿药役"
 		}
 		"zm3v3"
 		{

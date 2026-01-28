@@ -1,0 +1,148 @@
+"Phrases"
+{
+	"killed by fire"
+	{
+		"chi"	"玩火自焚"
+	}
+	"killed by map"
+	{
+		"chi"	"自爆"
+	}
+	"killed himself"
+	{
+		"chi"	"自杀"
+	}
+	"killed by toy"
+	{
+		"chi"	"玩车自爆"
+	}
+	"killed by boom"
+	{
+		"chi"	"被炸死"
+	}
+	"killed by server"
+	{
+		"chi"	"被天谴"
+	}
+	"One-Punch"
+	{
+		"chi"	"一拳超人"
+	}
+	"Rock-Stone"
+	{
+		"chi"	"玉石俱焚"
+	}
+	"Toy"
+	{
+		"chi"	"玩车杀"
+	}
+	"Alarm-Car"
+	{
+		"chi"	"玩警报车杀"
+	}
+	"Tank is killed by something"
+	{
+		"#format"	"{1:t}"
+		"chi"	"{green}[提示] {green}坦克 {olive}{1}{default}了。"
+	}
+	"Player is killed by something"
+	{
+		"#format"	"{1:N},{2:t}"
+		"chi"	"{green}[提示] {red}{1}{default} {olive}{2}{default}了。"
+	}
+	"Tank Kill Witch"
+	{
+		"#format"	"{1:t}"
+		"chi"	"{green}[提示] {green}坦克 {default}使用 {olive}{1}{default} 星爆氣流斬 {red}妹子{default}."
+	}
+	"punches"
+	{
+		"chi"	"拍"
+	}
+	"smashes"
+	{
+		"chi"	"砸"
+	}
+	"plays toy to kill"
+	{
+		"chi"	"玩车杀"
+	}
+	"plays alarm car to kill"
+	{
+		"chi"	"玩警报车杀"
+	}
+	"Tank kill teammate"
+	{
+		"#format"	"{1:t},{2:s}"
+		"chi"	"{green}[提示] {green}坦克 {olive}{1}死{default} {2}队友。"
+	}
+	"Tank kill Tank"
+	{
+		"#format"	"{1:t}"
+		"chi"	"{green}[提示] {green}坦克 {olive}{1}死{default} 另一只Tank。"
+	}
+	"l4d_pig_infected1"
+	{
+		"chi"	"{green}[提示] {green}Tank{default} 被门晕眩."
+	}
+	"l4d_pig_infected2"
+	{
+		"chi"	"{green}[提示] {red}妹子{default} 使出 {olive}天马流星拳 {default}打死队友。"
+	}
+	"l4d_pig_infected3"
+	{
+		"chi"	"{green}[提示] {red}妹子{default} 使出 {olive}北斗神拳 {default}打死AI队友。"
+	}
+	"l4d_pig_infected4"
+	{
+		"chi"	"{green}[提示] {red}妹子{default} {olive}狗带{default}了。"
+	}
+	"l4d_pig_infected5"
+	{
+		"#format"	"{1:N},{2:N}"
+		"chi"	"{green}[提示] {olive}{1}{default} 杀死 {red}{2}{default}'s Boomer 炸晕 {green}坦克{default}。"
+	}
+	"l4d_pig_infected6"
+	{
+		"#format"	"{1:N}"
+		"chi"	"{green}[提示] {olive}{1}{default} 杀死 {red}AI{default} Boomer 炸晕 {green}坦克{default}。"
+	}
+	"l4d_pig_infected7"
+	{
+		"#format"	"{1:t},{2:N}"
+		"chi"	"{green}[提示] {green}坦克 {olive}死{1} {red}{2}{default}'s Boomer 炸晕自己。"
+	}
+	"l4d_pig_infected8"
+	{
+		"#format"	"{1:t}"
+		"chi"	"{green}[提示] {green}坦克 {olive}{1}死 {red}AI{default} Boomer 炸晕自己。"
+	}
+	"l4d_pig_infected9"
+	{
+		"#format"	"{1:t},{2:N}"
+		"chi"	"{green}[提示] {green}坦克 {olive}{1}死 {red}{2}{default}'s Boomer。"
+	}
+	"l4d_pig_infected10"
+	{
+		"#format"	"{1:t}"
+		"chi"	"{green}[提示] {green}坦克 {olive}{1}死 {red}AI{default} Boomer。"
+	}
+	"l4d_pig_infected11"
+	{
+		"#format"	"{1:N}"
+		"chi"	"{green}[提示] {red}{1}{default}'s Boomer 爆炸啦。"
+	}
+	"l4d_pig_infected12"
+	{
+		"chi"	"{green}[提示] {red}AI{default} Boomer 爆炸啦。"
+	}
+	"l4d_pig_infected13"
+	{
+		"#format"	"{1:N}"
+		"chi"	"{green}[提示] {default}神队友 {red}{1}{default}'s Boomer 炸晕 {green}坦克{default}。"
+	}
+	"l4d_pig_infected14"
+	{
+		"chi"	"{green}[提示] {red}AI{default}'s Boomer 炸晕 {green}坦克{default}。"
+	}
+}
