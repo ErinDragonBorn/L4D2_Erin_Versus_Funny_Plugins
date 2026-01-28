@@ -274,7 +274,10 @@ Zonemod的1v1，移除了 Jockey。
 ---
 
 ## 🐞 Bug 反馈与交流
-由于本人目前没有服务器进行测试，若遇到 Bug 请联系我进行反馈 ：
-* **QQ:** 2803584304 
+
+这个插件包应该就到这里了吧，估计是不会再更新了，有 bug 请加我 QQ 反馈：
+
+* **QQ:** 2803584304
+* **交流群:** <details style="display:inline;"><summary>点击查看群号</summary>骗你的，没有</details>
 
 ---
